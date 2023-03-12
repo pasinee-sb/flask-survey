@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/app.css">
+    <title>{%block title %} {%endblock%}</title>
+</head>
+<body>
+    
+    {% for category,msg in get_flashed_messages(with_categories=true) %}
+    <section class="msg"></section>
+    <h2 class="{{category}}" style="color: brown;border: 2px solid blue;">{{ msg }}</h2>
+</section>
+    {% endfor %}
+
+   
+        {%block content%}
+        {%endblock%}
+    
+    
+</body>
+</html>

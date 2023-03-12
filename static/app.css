@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    color: pink;
+}
+body {
+    text-align: center;
+    justify-content: center;
+}
+
+/* flash styling not working, needed to do in-line */
+/* .msg .error {
+    color: blueviolet;
+    border: 2px solid blue;
+} */
